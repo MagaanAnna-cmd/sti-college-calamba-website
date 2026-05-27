@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STI College Calamba</title>
+<link rel="icon" type="image/png" href="images/sti-logo.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <img src="images/sti-logo.png" alt="STI Logo" />
+      <div>
+        <span>STI College Calamba</span>
+        <small>Campus Portal</small>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#instructors">IT Instructors</a>
+      <a href="#why">Why STI</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="tag">STI College Calamba</p>
+      <h1>Be future-ready. <span>Be STI.</span></h1>
+      <p>
+        A modern campus guide for students and visitors to explore STI College Calamba’s
+        facilities, IT faculty, and school information in one responsive website.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#facilities" class="btn primary">Explore Facilities</a>
+        <a href="#instructors" class="btn secondary">View IT Faculty</a>
+      </div>
+    </div>
+
+    <div class="portal-card">
+      <div class="logo-orbit">
+        <img src="images/sti-logo.png" alt="STI Logo" />
+      </div>
+
+      <div class="portal-info">
+        <h2>Campus Navigation</h2>
+        <p>Facilities • IT Faculty • Contact Info</p>
+      </div>
+
+      <div class="quick-stats">
+        <div>
+          <strong>8</strong>
+          <span>Facilities</span>
+        </div>
+        <div>
+          <strong>10</strong>
+          <span>IT Faculty</span>
+        </div>
+        <div>
+          <strong>1</strong>
+          <span>Campus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="section-title">
+      <p class="label">About the Campus</p>
+      <h2>About STI College Calamba</h2>
+    </div>
+
+    <div class="about-layout">
+      <div class="about-main">
+        <h3>A student-friendly digital guide</h3>
+        <p>
+          STI College Calamba provides students with a modern learning environment that supports 
+        21st century education, technology-based learning, and career readiness. Through its 
+        facilities, academic support, and hands-on learning spaces, the campus helps students 
+        develop industry-driven knowledge and practical skills for their future careers.
+        </p>
+      </div>
+
+      <div class="about-note">
+        <span>Purpose</span>
+        <p>
+          This website serves as a student-friendly guide to STI College Calamba, helping users 
+        explore campus facilities, IT instructors, and important school information in one 
+        organized digital space.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities" class="section facility-section">
+    <div class="section-title light-title">
+      <p class="label">Campus Resources</p>
+      <h2>Facility Navigator</h2>
+      <p>
+        Select a campus area below to view its short description.
+      </p>
+    </div>
+
+    <div class="facility-layout">
+      <div class="facility-list">
+        <button class="facility-btn active"
+          data-title="Computer Laboratory"
+          data-desc="A technology-equipped room used for programming, computer activities, and IT-related hands-on learning."
+          data-image="images/computer-laboratory.jpg">
+          Computer Laboratory
+        </button>
+
+        <button class="facility-btn"
+          data-title="Mezzanine"
+          data-desc="A common student area where learners can wait, study, and spend time between classes."
+          data-image="images/mezzanine.jpg">
+          Mezzanine
+        </button>
+
+        <button class="facility-btn"
+          data-title="Registration & Cashier"
+          data-desc="The area for enrollment concerns, payment transactions, student records, and school document requests."
+          data-image="images/registration-cashier.jpg">
+          Registration & Cashier
+        </button>
+
+        <button class="facility-btn"
+          data-title="Canteen"
+          data-desc="A food and dining area where students can buy meals, snacks, and refreshments during breaks."
+          data-image="images/canteen.jpg">
+          Canteen
+        </button>
+
+        <button class="facility-btn"
+          data-title="Classroom"
+          data-desc="A learning space used for lectures, discussions, academic activities, and student collaboration."
+          data-image="images/classroom.jpg">
+          Classroom
+        </button>
+
+        <button class="facility-btn"
+          data-title="Covered Court"
+          data-desc="A multipurpose area used for school events, physical activities, gatherings, and student programs."
+          data-image="images/covered-court.jpg">
+          Covered Court
+        </button>
+
+        <button class="facility-btn"
+          data-title="Parking Lot"
+          data-desc="A designated parking area for vehicles of students, staff, visitors, and school personnel."
+          data-image="images/parking-lot.jpg">
+          Parking Lot
+        </button>
+
+        <button class="facility-btn"
+          data-title="Front Desk"
+          data-desc="The first assistance point for inquiries, visitor guidance, and basic campus information."
+          data-image="images/front-desk.jpg">
+          Front Desk
+        </button>
+      </div>
+
+      <div class="facility-preview">
+        <div class="preview-image" id="facilityImage">
+          <span>Facility Image</span>
+        </div>
+
+        <div class="preview-content">
+          <p class="label">Campus Area</p>
+          <h3 id="facilityTitle">Computer Laboratory</h3>
+          <p id="facilityDesc">
+            A technology-equipped room used for programming, computer activities, and IT-related hands-on learning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="instructors" class="section instructors-section">
+    <div class="section-title">
+      <p class="label">Program Faculty</p>
+      <h2>IT Instructors</h2>
+      <p>
+        Meet the IT faculty members of STI College Calamba who guide students in technology-based learning.
+      </p>
+    </div>
+
+    <div class="instructor-grid">
+      <div class="faculty-card">
+        <img src="images/dexter-belarmino.png" alt="Dexter Belarmino" class="faculty-img">
+        <h3>Dexter Belarmino</h3>
+        <p>IT Faculty</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="images/joyce-ann-brofar.png" alt="Joyce Ann Brofar" class="faculty-img">
+        <h3>Joyce Ann Brofar</h3>
+        <p>IT Faculty</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="images/joie-mar-coral.png" alt="Joie Mar Coral" class="faculty-img">
+        <h3>Joie Mar Coral</h3>
+        <p>IT Faculty</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="images/jon-philip-daludado.png" alt="Jon Philip Daludado" class="faculty-img">
+        <h3>Jon Philip Daludado</h3>
+        <p>IT Faculty</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="images/kyla-cassandra-escriba.png" alt="Kyla Cassandra Escriba" class="faculty-img">
+        <h3>Kyla Cassandra Escriba</h3>
+        <p>IT Faculty</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="images/jose-carlos-gonzalez.png" alt="Jose Carlos Gonzalez" class="faculty-img">
+        <h3>Jose Carlos Gonzalez</h3>
+        <p>IT Faculty</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="images/euencis-palmones.png" alt="Euencis Palmones" class="faculty-img">
+        <h3>Euencis Palmones</h3>
+        <p>IT Faculty</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="images/arvin-sadicon.png" alt="Arvin Sadicon" class="faculty-img">
+        <h3>Arvin Sadicon</h3>
+        <p>IT Faculty</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="images/missy-ann-yamaro.png" alt="Missy Ann Yamaro" class="faculty-img">
+        <h3>Missy Ann Yamaro</h3>
+        <p>IT Faculty</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="images/domenand-yedra.png" alt="Domenand Yedra" class="faculty-img">
+        <h3>Domenand Yedra</h3>
+        <p>IT Faculty</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="section why-section">
+    <div class="section-title light-title">
+      <p class="label">Why Choose STI</p>
+      <h2>Future-ready learning experience</h2>
+    </div>
+
+    <div class="feature-strip">
+      <div class="feature-item">
+        <span>01</span>
+        <h3>21st Century Education</h3>
+        <p>Learning designed for modern students and future career opportunities.</p>
+      </div>
+
+      <div class="feature-item">
+        <span>02</span>
+        <h3>Technology-Based Learning</h3>
+        <p>Activities and facilities that support digital skills and hands-on learning.</p>
+      </div>
+
+      <div class="feature-item">
+        <span>03</span>
+        <h3>Student-Centered Support</h3>
+        <p>A school environment that supports academic and personal growth.</p>
+      </div>
+
+      <div class="feature-item">
+        <span>04</span>
+        <h3>Career Readiness</h3>
+        <p>Building skills and confidence for future professional opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+  <div class="contact-panel">
+    <div class="contact-intro">
+      <p class="label">Contact Information</p>
+      <h2>Connect with STI College Calamba</h2>
+      <p>
+        For enrollment concerns, campus inquiries, and school-related questions,
+        you may reach STI College Calamba through the information provided.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-item">
+        <span>📍</span>
+        <div>
+          <h3>Location</h3>
+          <p>Calamba, Laguna</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span>✉️</span>
+        <div>
+          <h3>Email</h3>
+          <p>example@email.com</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span>☎️</span>
+        <div>
+          <h3>Phone</h3>
+          <p>0000-000-0000</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span>🔵</span>
+        <div>
+          <h3>Facebook</h3>
+          <p>STI College Calamba</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <img src="images/sti-logo.png" alt="STI Logo" />
+    <p>STI College Calamba</p>
+    <small>Be future-ready. Be STI. © 2026 All Rights Reserved.</small>
+  </footer>
+
+  <div class="image-modal" id="imageModal">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <img id="modalImage" src="" alt="Instructor Preview">
+    <p id="modalName"></p>
+  </div>
+
+  <script src="functions.js"></script>
+</body>
+</html>
